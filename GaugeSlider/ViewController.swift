@@ -16,6 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(slider)
         slider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
+        
+        let time = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            self.slider.pathHighlightColor = .red
+            self.slider.handleImage = UIImage(named: "RectThumb")!
+            self.slider.highlightedHandleImage = UIImage(named: "HighlightedRect")!
+        }
     }
 
     override func viewDidLayoutSubviews() {
