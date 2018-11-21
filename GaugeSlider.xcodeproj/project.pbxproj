@@ -14,6 +14,8 @@
 		C036466221A5B0A600950205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C036466021A5B0A600950205 /* LaunchScreen.storyboard */; };
 		C036466D21A5B0A700950205 /* GaugeSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036466C21A5B0A700950205 /* GaugeSliderTests.swift */; };
 		C036467821A5B0A700950205 /* GaugeSliderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036467721A5B0A700950205 /* GaugeSliderUITests.swift */; };
+		C036468621A5B17A00950205 /* GSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036468521A5B17A00950205 /* GSlider.swift */; };
+		C036468821A5B1B800950205 /* SliderPathLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036468721A5B1B800950205 /* SliderPathLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C036467321A5B0A700950205 /* GaugeSliderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaugeSliderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C036467721A5B0A700950205 /* GaugeSliderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeSliderUITests.swift; sourceTree = "<group>"; };
 		C036467921A5B0A700950205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C036468521A5B17A00950205 /* GSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSlider.swift; sourceTree = "<group>"; };
+		C036468721A5B1B800950205 /* SliderPathLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPathLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				C036465E21A5B0A600950205 /* Assets.xcassets */,
 				C036466021A5B0A600950205 /* LaunchScreen.storyboard */,
 				C036466321A5B0A600950205 /* Info.plist */,
+				C036468521A5B17A00950205 /* GSlider.swift */,
+				C036468721A5B1B800950205 /* SliderPathLayer.swift */,
 			);
 			path = GaugeSlider;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C036465A21A5B0A500950205 /* ViewController.swift in Sources */,
+				C036468821A5B1B800950205 /* SliderPathLayer.swift in Sources */,
+				C036468621A5B17A00950205 /* GSlider.swift in Sources */,
 				C036465821A5B0A500950205 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RL84VX9G5B;
 				INFOPLIST_FILE = GaugeSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RL84VX9G5B;
 				INFOPLIST_FILE = GaugeSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
